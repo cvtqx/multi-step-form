@@ -1,24 +1,16 @@
-import SideNavBackground from "../assets/images/bg-sidebar-desktop.svg";
-import BannerMobile from "../assets/images/bg-sidebar-mobile.svg";
+// import BannerMobile from "../assets/images/bg-sidebar-mobile.svg";
+
+import { CardContent } from "./CardContent";
+import MobileBanner from "./MobileBanner"
+import SideNav from "./SideNav"
 
 export default function FormContainer() {
   return (
-    <div className="md:place-self-center card md:card-side md:w-5/6 max-w-[925px] bg-base-100  shadow-xl">
-      {/* <figure>
-        <img
-          src={SideNavBackground}
-          alt="purple sidebar"
-          className="hidden md:block"
-        />
-        <img
-          src={BannerMobile}
-          alt="purple banner on mobile screen"
-          className="md:hidden"
-        />
-      </figure> */}
-      <div className="card-body">
-        <h2 className="card-title">Title</h2>
-        <p>Description.</p>
+    <div className="flex flex-col md:flex-row rounded-lg md:place-self-center md:w-5/6 max-w-[925px] md:bg-base-100  shadow-xl md:h-[525px]">
+      <SideNav />
+      <MobileBanner/>
+      <div className="card-body basis-3/4">
+        <CardContent />
         <div className="card-actions justify-end">
           <button className="btn btn-primary">Next</button>
         </div>

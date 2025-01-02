@@ -6,3 +6,27 @@ html, body {
   @apply bg-magnolia;
    @apply h-screen
 }
+
+.side-nav-background {
+  background-image: url('./assets/images/bg-sidebar-desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mobile-banner-background {
+  background-image: url('./assets/images/bg-sidebar-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+.card-overlay {
+  background-color: white;
+  border-radius: 0.5rem;
+  height: 16rem; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  position: relative;
+  z-index: 10; 
+  transform: translateY(-100px); 
+}
+}
